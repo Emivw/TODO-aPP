@@ -6,14 +6,3 @@ function age() {
     document.getElementById("output").innerHTML =
         "Hello, " + "you are " + ageInDays + " days old!";
 }
-
-
-
-// function getAge(birthYear) {
-//     var currentDate = new Date();
-//     var currentYear = currentDate.getFullYear();
-//     var age = currentYear - birthYear;
-//     return age;
-// }
-// var calculatedAge = getAge(year_born);
-// alert("Hello, " + "you are " + calculatedAge + " years old!");
