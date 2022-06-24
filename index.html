@@ -10,30 +10,28 @@
     <!-- my css -->
     <link rel="stylesheet" href="./assets/main.css">
 
-    <title>age_in_days_Calc</title>
+    <title>TodoApp</title>
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center">
-        <div class="row">
-            <div class="col">
-                <h1 id="mainhead" class="display-2">Age Converter</h1>
-            </div>
-            <div class="row ">
-                <div class="col-md-6 d-flex justify-content-center gap-2 ">
-                    <input type="date" id="input" placeholder="yyyy-MM-dd" class="value=" />
-                    <div class="row ">
-                        <div class="col-md d-flex justify-content-center gap-2 ">
-                            <button class="btn btn-success " onclick="age()">get your age in days</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-center ">
-                    <h1 id=" ">Output here:</h1>
-                    <button id="output" class="btn btn-success ">result</button>
-                </div>
-            </div>
-        </div>
+
+    <div class="container bg-dark text-white">
+        <h2>TODO LIST</h2>
+        <h3>Add Item</h3>
+        <p>
+            <input id="new-task" type="text"><button>Add</button>
+        </p>
+
+        <h3>Todo</h3>
+        <ul id="incomplete-tasks">
+            <li><input type="checkbox"><label>task one</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            <li><input type="checkbox"><label>task two</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        </ul>
+
+        <h3>Completed</h3>
+        <ul id="completed-tasks">
+            <li><input type="checkbox" checked><label>task three</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        </ul>
     </div>
     <!-- bootsrap scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
